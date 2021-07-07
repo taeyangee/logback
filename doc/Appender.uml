@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>ch.qos.logback.core.Appender</OriginalElement>
+  <nodes>
+    <node x="0.0" y="320.0">ch.qos.logback.core.ConsoleAppender</node>
+    <node x="188.0" y="320.0">ch.qos.logback.core.FileAppender</node>
+    <node x="336.0" y="240.0">ch.qos.logback.core.net.SyslogAppenderBase</node>
+    <node x="548.0" y="240.0">ch.qos.logback.core.appender.ListAppender</node>
+    <node x="352.0" y="320.0">ch.qos.logback.classic.net.SyslogAppender</node>
+    <node x="372.7142857142857" y="80.0">ch.qos.logback.core.Appender</node>
+    <node x="360.0" y="160.0">ch.qos.logback.core.AppenderBase</node>
+    <node x="508.7142857142857" y="0.0">ch.qos.logback.core.spi.ContextAware</node>
+    <node x="160.0" y="400.0">ch.qos.logback.core.rolling.RollingFileAppender</node>
+    <node x="172.71428571428572" y="0.0">ch.qos.logback.core.spi.FilterAttachable</node>
+    <node x="368.7142857142857" y="0.0">ch.qos.logback.core.spi.LifeCycle</node>
+    <node x="127.14285714285717" y="240.0">ch.qos.logback.core.WriterAppender</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="ch.qos.logback.core.Appender" target="ch.qos.logback.core.spi.ContextAware">
+      <point x="37.333333333333314" y="-15.0" />
+      <point x="466.04761904761904" y="55.0" />
+      <point x="544.7142857142858" y="55.0" />
+      <point x="-36.0" y="15.0" />
+    </edge>
+    <edge source="ch.qos.logback.core.Appender" target="ch.qos.logback.core.spi.LifeCycle">
+      <point x="0.0" y="-15.0" />
+      <point x="0.0" y="15.0" />
+    </edge>
+    <edge source="ch.qos.logback.core.AppenderBase" target="ch.qos.logback.core.Appender">
+      <point x="0.0" y="-15.0" />
+      <point x="432.0" y="135.0" />
+      <point x="428.7142857142857" y="135.0" />
+      <point x="0.0" y="15.0" />
+    </edge>
+    <edge source="ch.qos.logback.core.net.SyslogAppenderBase" target="ch.qos.logback.core.AppenderBase">
+      <point x="0.0" y="-15.0" />
+      <point x="0.0" y="15.0" />
+    </edge>
+    <edge source="ch.qos.logback.classic.net.SyslogAppender" target="ch.qos.logback.core.net.SyslogAppenderBase">
+      <point x="0.0" y="-15.0" />
+      <point x="0.0" y="15.0" />
+    </edge>
+    <edge source="ch.qos.logback.core.AppenderBase" target="ch.qos.logback.core.spi.FilterAttachable">
+      <point x="-48.0" y="-15.0" />
+      <point x="384.0" y="135.0" />
+      <point x="216.71428571428572" y="135.0" />
+      <point x="-44.0" y="15.0" />
+    </edge>
+    <edge source="ch.qos.logback.core.appender.ListAppender" target="ch.qos.logback.core.AppenderBase">
+      <point x="0.0" y="-15.0" />
+      <point x="620.0" y="215.0" />
+      <point x="480.0" y="215.0" />
+      <point x="48.0" y="15.0" />
+    </edge>
+    <edge source="ch.qos.logback.core.FileAppender" target="ch.qos.logback.core.WriterAppender">
+      <point x="0.0" y="-15.0" />
+      <point x="260.0" y="295.0" />
+      <point x="247.14285714285717" y="295.0" />
+      <point x="40.0" y="15.0" />
+    </edge>
+    <edge source="ch.qos.logback.core.rolling.RollingFileAppender" target="ch.qos.logback.core.FileAppender">
+      <point x="0.0" y="-15.0" />
+      <point x="0.0" y="15.0" />
+    </edge>
+    <edge source="ch.qos.logback.core.AppenderBase" target="ch.qos.logback.core.spi.ContextAware">
+      <point x="48.0" y="-15.0" />
+      <point x="480.0" y="135.0" />
+      <point x="616.7142857142858" y="135.0" />
+      <point x="36.0" y="15.0" />
+    </edge>
+    <edge source="ch.qos.logback.core.Appender" target="ch.qos.logback.core.spi.FilterAttachable">
+      <point x="-37.33333333333337" y="-15.0" />
+      <point x="391.38095238095235" y="55.0" />
+      <point x="304.7142857142857" y="55.0" />
+      <point x="44.0" y="15.0" />
+    </edge>
+    <edge source="ch.qos.logback.core.WriterAppender" target="ch.qos.logback.core.AppenderBase">
+      <point x="0.0" y="-15.0" />
+      <point x="207.14285714285717" y="215.0" />
+      <point x="384.0" y="215.0" />
+      <point x="-48.0" y="15.0" />
+    </edge>
+    <edge source="ch.qos.logback.core.ConsoleAppender" target="ch.qos.logback.core.WriterAppender">
+      <point x="0.0" y="-15.0" />
+      <point x="84.0" y="295.0" />
+      <point x="167.14285714285717" y="295.0" />
+      <point x="-40.0" y="15.0" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Group" zoom="1.0" x="103.0" y="215.0" />
+  <SelectedNodes>
+    <node>ch.qos.logback.core.FileAppender</node>
+  </SelectedNodes>
+  <Categories />
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+

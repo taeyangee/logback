@@ -1,0 +1,3 @@
+- Encoders作用： are responsible for transforming an event into a byte array as well as writing out that byte array into an OutputStream.
+- Encoders vs Layout: 0.9版本之前Appender是直接和Layout打交道的，现在变成了Encoder。 作者是希望 Encoders能更多控制log event
+- Encoder目前比较鸡肋（代码估计也比较薄），但是将来可能有用：At the present time, PatternLayoutEncoder is the only really useful encoder. It merely wraps a PatternLayout which does most of the work. Thus, it may seem that encoders do not bring much to the table except needless complexity. However, we hope that with the advent of new and powerful encoders this impression will change.
